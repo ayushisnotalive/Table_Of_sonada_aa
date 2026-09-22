@@ -1,0 +1,6 @@
+{
+  "name": "Taste of Sonada - Cafe & Restaurant",
+  "description": "Cozy cafe and restaurant in Chaikhola near Green Hill School, Sonada, Darjeeling. Known for fresh breakfast, burgers, fried chicken, tea, and artisan coffee.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
