@@ -141,6 +141,7 @@ export default function GalleryMasonry() {
                         referrerPolicy="no-referrer"
                         className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
                         loading="lazy"
+                        decoding="async"
                       />
                       {/* Zoom icon badge */}
                       <div className="absolute top-3 right-3 p-1.5 rounded-full bg-[#2C221E]/60 text-white opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-xs">

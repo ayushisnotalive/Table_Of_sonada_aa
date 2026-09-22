@@ -4,7 +4,7 @@ export const RESTAURANT_INFO = {
   name: 'Taste of Sonada',
   tagline: 'Cafe & Restaurant • Sonada, Darjeeling',
   description:
-    'A tranquil hill-station haven nestled in Chaikhola, Sonada. Serving fresh breakfast platters, handcrafted gourmet burgers, golden crispy fried chicken, specialty coffee, and authentic Darjeeling tea.',
+    'A top-rated, tranquil hill-station haven nestled in Chaikhola, Sonada. Renowned among locals and tourists on the Kurseong-Darjeeling route for serving fresh organic breakfast platters, handcrafted gourmet burgers, golden crispy fried chicken, specialty artisan coffee roasts, and authentic Darjeeling tea leaves directly from nearby estates.',
   address: 'Chaikhola, near Green Hill School, Sonada, Darjeeling, West Bengal 734209',
   phone: '070016 74927',
   phoneRaw: '+917001674927',
@@ -340,14 +340,14 @@ export const FAQ_DATA: FaqItem[] = [
     category: 'Location',
     question: 'Where is the best cafe near Green Hill School in Sonada?',
     answer:
-      'Taste of Sonada is the premier cafe and restaurant situated right at Chaikhola, just steps away from Green Hill School in Sonada, Darjeeling (PIN 734209). It is easily accessible right along the main hillside route with convenient stopping points.',
+      'Taste of Sonada is widely recognized as the premier cafe and restaurant situated right at Chaikhola, just steps away from Green Hill School in Sonada, Darjeeling district (PIN 734209). With a 4.9-star rating, it is a highly recommended dining spot along the main National Highway 110 route connecting Kurseong and Darjeeling, featuring ample parking and scenic misty views.',
   },
   {
     id: 'faq-2',
     category: 'Menu',
     question: 'What is on the menu at Taste of Sonada?',
     answer:
-      'Our menu features freshly cooked breakfast platters, handcrafted gourmet burgers, signature crispy golden fried chicken, steamed and kothey Tibetan momos, club sandwiches, artisan coffee, and authentic first & second flush Darjeeling tea.',
+      'Our diverse menu offers something for everyone, featuring freshly cooked Himalayan breakfast platters, handcrafted gourmet cheeseburgers, our signature crispy golden fried chicken, authentic steamed and pan-fried Kothey Tibetan momos, loaded club sandwiches, artisan espresso coffee, and premium first & second flush Darjeeling tea sourced from local estates like Makaibari.',
   },
   {
     id: 'faq-3',
@@ -368,7 +368,7 @@ export const FAQ_DATA: FaqItem[] = [
     category: 'Menu',
     question: 'Does Taste of Sonada serve vegetarian and hot beverage options?',
     answer:
-      'Yes! We offer a wide range of vegetarian options including grilled paneer burgers, golden pancakes with mountain honey, peri-peri loaded cheese fries, and artisanal hot brews including local Darjeeling tea and cappuccino.',
+      'Yes! We offer a comprehensive vegetarian and vegan-friendly menu. Popular pure-veg options include our smoked BBQ grilled paneer burgers, fluffy golden pancakes with organic mountain honey, peri-peri loaded cheese fries, and artisanal hot beverages including locally sourced Darjeeling tea, spiced mountain masala chai, and rich hazelnut cappuccinos.',
   },
   {
     id: 'faq-6',

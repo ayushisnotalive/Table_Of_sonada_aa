@@ -15,6 +15,8 @@ export default function Hero() {
           src={heroBackgroundUrl}
           alt="Taste of Sonada Cozy Cafe Ambiance"
           referrerPolicy="no-referrer"
+          fetchPriority="high"
+          decoding="sync"
           className="w-full h-full object-cover object-center scale-105 transform motion-safe:transition-transform duration-1000 filter brightness-[0.88] contrast-[1.05]"
         />
         {/* Soft, warm amber-espresso gradient overlay to maintain strict cafe warmth without harsh black */}

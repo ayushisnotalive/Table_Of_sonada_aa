@@ -10,11 +10,12 @@
     />
     <meta name="keywords" content="Taste of Sonada, cafe in Sonada, restaurant near Green Hill School Sonada, best cafe in Darjeeling district, Sonada burgers, fried chicken Sonada, Darjeeling tea cafe, breakfast in Sonada" />
     <meta name="author" content="Taste of Sonada" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://tasteofsonada.in/" />
     <meta name="geo.region" content="IN-WB" />
     <meta name="geo.placename" content="Sonada, Darjeeling" />
     <meta name="geo.position" content="26.9608;88.2711" />
     <meta name="ICBM" content="26.9608, 88.2711" />
-
     <!-- OpenGraph Metadata -->
     <meta property="og:type" content="restaurant" />
     <meta property="og:site_name" content="Taste of Sonada" />
@@ -40,88 +41,119 @@
       content="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlzOq_w91zHaHUZc8wgG2cVsiotDY_qY9DlimkwOHhn192bEDzdWj6EXrRfI-A7XVPbMzamfRyLvBvZ6zDPBa7vbbhO7VYmMVBs2SERafgh972huyywHyRp1dszhXm8GkDLNGopD1k9qBXl=w229-h191-n-k-no-nu"
     />
 
-    <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
+    <!-- Resource Hints & Preloading for Core Web Vitals -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin />
+    <link rel="dns-prefetch" href="https://lh3.googleusercontent.com" />
+    
+    <!-- Preload Critical Hero Image -->
+    <link rel="preload" as="image" href="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlzOq_w91zHaHUZc8wgG2cVsiotDY_qY9DlimkwOHhn192bEDzdWj6EXrRfI-A7XVPbMzamfRyLvBvZ6zDPBa7vbbhO7VYmMVBs2SERafgh972huyywHyRp1dszhXm8GkDLNGopD1k9qBXl=w229-h191-n-k-no-nu" />
+
+    <!-- Google Fonts: Playfair Display + Plus Jakarta Sans -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
+      media="print" onload="this.media='all'"
     />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    </noscript>
 
     <!-- Schema.org JSON-LD LocalBusiness / Restaurant -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Restaurant",
-      "@id": "https://tasteofsonada.in/#restaurant",
-      "name": "Taste of Sonada",
-      "image": [
-        "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlzOq_w91zHaHUZc8wgG2cVsiotDY_qY9DlimkwOHhn192bEDzdWj6EXrRfI-A7XVPbMzamfRyLvBvZ6zDPBa7vbbhO7VYmMVBs2SERafgh972huyywHyRp1dszhXm8GkDLNGopD1k9qBXl=w229-h191-n-k-no-nu",
-        "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlUgD0F_ROhttI_Sj3Lfn1F2C_dySKHRgxZPuSs_SOGAtql0ATfH_I1BILe1A2cVDwYCuXSmFXj4gaGzv3blg6DR-aYRpYNJ-K5Dq03yZRsLP7D6QiMPb_Kz3ujEhXG3pLfp7LQLtvDvweJ=s680-w680-h510-rw"
-      ],
-      "telephone": "+917001674927",
-      "priceRange": "₹200–400",
-      "servesCuisine": [
-        "Cafe",
-        "Fast Food",
-        "Tibetan",
-        "Continental",
-        "Breakfast",
-        "Tea & Coffee"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Chaikhola, near Green Hill School",
-        "addressLocality": "Sonada",
-        "addressRegion": "West Bengal",
-        "postalCode": "734209",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 26.9608,
-        "longitude": 88.2711
-      },
-      "openingHoursSpecification": [
+      "@graph": [
         {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday",
-            "Sunday"
+          "@type": "Restaurant",
+          "@id": "https://tasteofsonada.in/#restaurant",
+          "name": "Taste of Sonada",
+          "url": "https://tasteofsonada.in/",
+          "sameAs": [
+            "https://www.google.com/maps?cid=4811652488812699863",
+            "https://www.instagram.com/tasteofsonada"
           ],
-          "opens": "08:30",
-          "closes": "20:00"
-        }
-      ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "135",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "hasMenu": "https://tasteofsonada.in/#menu",
-      "acceptsReservations": "False",
-      "amenityFeature": [
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Cozy Hillside Seating",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Fresh Darjeeling Tea",
-          "value": true
-        },
-        {
-          "@type": "LocationFeatureSpecification",
-          "name": "Takeaway Available",
-          "value": true
+          "image": [
+            "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlzOq_w91zHaHUZc8wgG2cVsiotDY_qY9DlimkwOHhn192bEDzdWj6EXrRfI-A7XVPbMzamfRyLvBvZ6zDPBa7vbbhO7VYmMVBs2SERafgh972huyywHyRp1dszhXm8GkDLNGopD1k9qBXl=w229-h191-n-k-no-nu",
+            "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlUgD0F_ROhttI_Sj3Lfn1F2C_dySKHRgxZPuSs_SOGAtql0ATfH_I1BILe1A2cVDwYCuXSmFXj4gaGzv3blg6DR-aYRpYNJ-K5Dq03yZRsLP7D6QiMPb_Kz3ujEhXG3pLfp7LQLtvDvweJ=s680-w680-h510-rw"
+          ],
+          "description": "A top-rated cafe and restaurant in Sonada, Darjeeling, specializing in fresh breakfast, gourmet burgers, crispy fried chicken, authentic Darjeeling tea, and specialty coffee. Located perfectly in Chaikhola near Green Hill School on the Kurseong-Darjeeling route.",
+          "telephone": "+917001674927",
+          "priceRange": "₹200–400",
+          "knowsAbout": ["Darjeeling Tea", "Specialty Coffee", "Fried Chicken", "Gourmet Burgers", "Tibetan Cuisine"],
+          "servesCuisine": [
+            "Cafe",
+            "Fast Food",
+            "Tibetan",
+            "Continental",
+            "Breakfast",
+            "Tea & Coffee"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Chaikhola, near Green Hill School",
+            "addressLocality": "Sonada",
+            "addressRegion": "West Bengal",
+            "postalCode": "734209",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 26.9608,
+            "longitude": 88.2711
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Sonada"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "08:30",
+              "closes": "20:00"
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "135",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "hasMenu": {
+            "@type": "Menu",
+            "@id": "https://tasteofsonada.in/#menu",
+            "name": "Taste of Sonada Signature Menu",
+            "url": "https://tasteofsonada.in/#menu"
+          },
+          "acceptsReservations": "False",
+          "amenityFeature": [
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Cozy Hillside Seating",
+              "value": true
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Fresh Darjeeling Tea",
+              "value": true
+            },
+            {
+              "@type": "LocationFeatureSpecification",
+              "name": "Takeaway Available",
+              "value": true
+            }
+          ]
         }
       ]
     }
@@ -174,6 +206,25 @@
           }
         }
       ]
+    }
+    </script>
+
+    <!-- Schema.org WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://tasteofsonada.in/",
+      "name": "Taste of Sonada",
+      "description": "Top-rated cafe in Sonada, Darjeeling offering Darjeeling tea, specialty coffee, burgers, and fast food.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Taste of Sonada",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlzOq_w91zHaHUZc8wgG2cVsiotDY_qY9DlimkwOHhn192bEDzdWj6EXrRfI-A7XVPbMzamfRyLvBvZ6zDPBa7vbbhO7VYmMVBs2SERafgh972huyywHyRp1dszhXm8GkDLNGopD1k9qBXl=w229-h191-n-k-no-nu"
+        }
+      }
     }
     </script>
   </head>
