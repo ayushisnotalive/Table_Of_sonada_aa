@@ -22,7 +22,7 @@ export default function HighlightsBar() {
       icon: Utensils,
       title: 'Famous For Crunch & Comfort',
       desc: 'Burgers, crispy chicken, momos & brunch',
-      color: 'text-[#D2691E]',
+      color: 'text-[#C2410C]',
       bg: 'bg-orange-100/70',
     },
     {
@@ -41,9 +41,9 @@ export default function HighlightsBar() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
-        className="bg-[#F4F1EB] rounded-2xl shadow-xl border border-[#E8E2D7] p-4 sm:p-6"
+        className="bg-[#F5F5F4] rounded-2xl shadow-xl border border-[#E7E5E4] p-4 sm:p-6"
       >
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 divide-y sm:divide-y-0 sm:divide-x divide-[#E8E2D7]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 divide-y sm:divide-y-0 sm:divide-x divide-[#E7E5E4]">
           {highlights.map((item, idx) => {
             const Icon = item.icon;
             return (
@@ -57,10 +57,10 @@ export default function HighlightsBar() {
                   <Icon className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="font-serif-title font-bold text-[#2C221E] text-base leading-tight">
+                  <h4 className="font-serif-title font-bold text-[#292524] text-base leading-tight">
                     {item.title}
                   </h4>
-                  <p className="text-xs sm:text-sm text-[#6E615A] mt-1 leading-snug">
+                  <p className="text-xs sm:text-sm text-[#57534E] mt-1 leading-snug">
                     {item.desc}
                   </p>
                 </div>

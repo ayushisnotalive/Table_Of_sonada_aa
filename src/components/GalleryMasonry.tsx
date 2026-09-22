@@ -45,7 +45,7 @@ export default function GalleryMasonry() {
   const currentItem = selectedIndex !== null ? filteredItems[selectedIndex] : null;
 
   return (
-    <section id="gallery" className="py-20 bg-[#F4F1EB] relative">
+    <section id="gallery" className="py-20 bg-[#F5F5F4] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
@@ -55,14 +55,14 @@ export default function GalleryMasonry() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#EFE9DF] border border-[#E8E2D7] text-xs font-semibold text-[#D2691E] uppercase tracking-wider mb-3">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#F5F5F4] border border-[#E7E5E4] text-xs font-semibold text-[#C2410C] uppercase tracking-wider mb-3">
               <Camera className="w-3.5 h-3.5" />
               Glimpses of Taste of Sonada
             </span>
-            <h2 className="font-serif-title text-3xl sm:text-5xl font-bold text-[#2C221E] tracking-tight">
+            <h2 className="font-serif-title text-3xl sm:text-5xl font-bold text-[#292524] tracking-tight">
               Ambiance, Food &amp; Mountain Vibe
             </h2>
-            <p className="mt-3.5 text-base sm:text-lg text-[#6E615A] leading-relaxed">
+            <p className="mt-3.5 text-base sm:text-lg text-[#57534E] leading-relaxed">
               Experience the warm wooden warmth, misty hillside dining, sizzling burgers,
               crispy fried chicken, and cozy moments nestled near Green Hill School in Sonada.
             </p>
@@ -76,8 +76,8 @@ export default function GalleryMasonry() {
                 onClick={() => setActiveFilter(f.id)}
                 className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all duration-300 cursor-pointer ${
                   activeFilter === f.id
-                    ? 'bg-[#D2691E] text-white shadow-sm'
-                    : 'bg-[#FBF8F3] text-[#6E615A] hover:bg-[#E8E2D7] hover:text-[#2C221E] border border-[#E8E2D7]'
+                    ? 'bg-[#C2410C] text-white shadow-sm'
+                    : 'bg-[#FAFAF9] text-[#57534E] hover:bg-[#E7E5E4] hover:text-[#292524] border border-[#E7E5E4]'
                 }`}
               >
                 {f.label}
@@ -105,14 +105,14 @@ export default function GalleryMasonry() {
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.94 }}
                   transition={{ duration: 0.4 }}
-                  className={`group relative rounded-2xl overflow-hidden cursor-pointer bg-[#EFE9DF] border border-[#E8E2D7] shadow-sm hover:shadow-2xl transition-all duration-400 ease-in-out hover:scale-105 ${
+                  className={`group relative rounded-2xl overflow-hidden cursor-pointer bg-[#F5F5F4] border border-[#E7E5E4] shadow-sm hover:shadow-2xl transition-all duration-400 ease-in-out hover:scale-105 ${
                     isLarge ? 'sm:col-span-2 sm:row-span-2' : ''
                   }`}
                   onClick={() => handleOpenLightbox(idx)}
                 >
                   {/* Media (Image or Video preview) */}
                   {isVideo ? (
-                    <div className="relative w-full h-full bg-[#2C221E]/10 flex items-center justify-center overflow-hidden">
+                    <div className="relative w-full h-full bg-[#292524]/10 flex items-center justify-center overflow-hidden">
                       <video
                         src={item.url}
                         muted
@@ -122,13 +122,13 @@ export default function GalleryMasonry() {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       {/* Video indicator badge */}
-                      <div className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-[#2C221E]/75 backdrop-blur-md text-amber-200 text-xs font-medium flex items-center gap-1.5 border border-white/10 z-10">
+                      <div className="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-[#292524]/75 backdrop-blur-md text-amber-200 text-xs font-medium flex items-center gap-1.5 border border-white/10 z-10">
                         <Film className="w-3.5 h-3.5" />
                         <span>Reel</span>
                       </div>
                       {/* Play overlay button */}
                       <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-colors">
-                        <div className="w-12 h-12 rounded-full bg-[#D2691E]/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                        <div className="w-12 h-12 rounded-full bg-[#C2410C]/90 text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
                           <Play className="w-5 h-5 ml-0.5 fill-white" />
                         </div>
                       </div>
@@ -144,21 +144,21 @@ export default function GalleryMasonry() {
                         decoding="async"
                       />
                       {/* Zoom icon badge */}
-                      <div className="absolute top-3 right-3 p-1.5 rounded-full bg-[#2C221E]/60 text-white opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-xs">
+                      <div className="absolute top-3 right-3 p-1.5 rounded-full bg-[#292524]/60 text-white opacity-0 group-hover:opacity-100 transition-opacity backdrop-blur-xs">
                         <ZoomIn className="w-4 h-4" />
                       </div>
                     </div>
                   )}
 
                   {/* Bottom Warm Gradient & Caption Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#2C221E]/85 via-[#2C221E]/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-4 sm:p-5 text-[#FBF8F3]">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#292524]/85 via-[#292524]/30 to-transparent opacity-85 group-hover:opacity-95 transition-opacity flex flex-col justify-end p-4 sm:p-5 text-[#FAFAF9]">
                     <span className="text-[11px] font-semibold uppercase tracking-wider text-amber-300 mb-0.5">
                       {isVideo ? 'Cafe Short Reel' : item.category}
                     </span>
                     <h4 className="font-serif-title font-bold text-base sm:text-lg leading-snug">
                       {item.title}
                     </h4>
-                    <p className="text-xs text-[#FBF8F3]/80 line-clamp-1 mt-0.5 font-light">
+                    <p className="text-xs text-[#FAFAF9]/80 line-clamp-1 mt-0.5 font-light">
                       {item.subtitle}
                     </p>
                   </div>

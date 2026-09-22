@@ -20,13 +20,13 @@ export default function Hero() {
           className="w-full h-full object-cover object-center scale-105 transform motion-safe:transition-transform duration-1000 filter brightness-[0.88] contrast-[1.05]"
         />
         {/* Soft, warm amber-espresso gradient overlay to maintain strict cafe warmth without harsh black */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2C221E]/90 via-[#3D2C24]/65 to-[#2C221E]/45 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#292524]/90 via-[#3D2C24]/65 to-[#292524]/45 backdrop-blur-[1px]" />
         {/* Warm subtle vignette */}
-        <div className="absolute inset-0 bg-radial from-transparent via-transparent to-[#2C221E]/60 pointer-events-none" />
+        <div className="absolute inset-0 bg-radial from-transparent via-transparent to-[#292524]/60 pointer-events-none" />
       </div>
 
       {/* Hero Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#FBF8F3]">
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-[#FAFAF9]">
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
@@ -35,7 +35,7 @@ export default function Hero() {
         >
           {/* Top Badges Strip */}
           <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3">
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#FBF8F3]/15 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-medium text-[#FBF8F3]">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#FAFAF9]/15 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-medium text-[#FAFAF9]">
               <MapPin className="w-3.5 h-3.5 text-amber-300" />
               Chaikhola, near Green Hill School, Sonada
             </span>
@@ -43,7 +43,7 @@ export default function Hero() {
               <Star className="w-3.5 h-3.5 fill-amber-300 text-amber-300" />
               4.9 Stars • 135+ Reviews
             </span>
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#FBF8F3]/15 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-medium text-[#FBF8F3]">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#FAFAF9]/15 backdrop-blur-md border border-white/20 text-xs sm:text-sm font-medium text-[#FAFAF9]">
               <Clock className="w-3.5 h-3.5 text-amber-300" />
               Open Daily Till 8:00 PM
             </span>
@@ -51,7 +51,7 @@ export default function Hero() {
 
           {/* Main Headline */}
           <div className="space-y-3 max-w-4xl mx-auto">
-            <h1 className="font-serif-title text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-[#FBF8F3] leading-[1.12]">
+            <h1 className="font-serif-title text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-[#FAFAF9] leading-[1.12]">
               Taste of Sonada
             </h1>
             <p className="font-serif-title text-xl sm:text-2xl md:text-3xl text-amber-200/90 italic font-medium">
@@ -60,7 +60,7 @@ export default function Hero() {
           </div>
 
           {/* Description */}
-          <p className="max-w-2xl mx-auto text-base sm:text-lg text-[#FBF8F3]/85 font-light leading-relaxed">
+          <p className="max-w-2xl mx-auto text-base sm:text-lg text-[#FAFAF9]/85 font-light leading-relaxed">
             Your cozy hill-station retreat in Sonada. Famous for hot Darjeeling brews,
             artisan coffees, sizzling burgers, golden fried chicken, and comforting all-day breakfast.
           </p>
@@ -83,7 +83,7 @@ export default function Hero() {
             <a
               href="#menu"
               id="hero-explore-menu-btn"
-              className="slow-pop w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-[#D2691E] text-white text-base font-semibold shadow-lg hover:bg-[#BD5813] border border-amber-500/30"
+              className="slow-pop w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-[#C2410C] text-white text-base font-semibold shadow-lg hover:bg-[#9A3412] border border-amber-500/30"
             >
               <Utensils className="w-4 h-4" />
               <span>Explore Our Menu</span>
@@ -93,9 +93,9 @@ export default function Hero() {
             <a
               href={`tel:${RESTAURANT_INFO.phoneRaw}`}
               id="hero-call-btn"
-              className="slow-pop w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#FBF8F3]/90 text-[#2C221E] text-base font-semibold shadow-md hover:bg-white hover:text-[#D2691E] border border-[#E8E2D7]"
+              className="slow-pop w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#FAFAF9]/90 text-[#292524] text-base font-semibold shadow-md hover:bg-white hover:text-[#C2410C] border border-[#E7E5E4]"
             >
-              <Phone className="w-4 h-4 text-[#D2691E]" />
+              <Phone className="w-4 h-4 text-[#C2410C]" />
               <span>Call 070016 74927</span>
             </a>
 
@@ -104,7 +104,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
               id="hero-directions-btn"
-              className="slow-pop w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-black/30 backdrop-blur-md text-[#FBF8F3] text-base font-medium hover:bg-black/45 border border-white/20"
+              className="slow-pop w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-black/30 backdrop-blur-md text-[#FAFAF9] text-base font-medium hover:bg-black/45 border border-white/20"
             >
               <MapPin className="w-4 h-4 text-amber-300" />
               <span>Directions</span>
@@ -112,7 +112,7 @@ export default function Hero() {
           </div>
 
           {/* Value points */}
-          <div className="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto border-t border-white/15 text-xs sm:text-sm text-[#FBF8F3]/80">
+          <div className="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto border-t border-white/15 text-xs sm:text-sm text-[#FAFAF9]/80">
             <div className="flex items-center justify-center gap-1.5 py-1">
               <ShieldCheck className="w-4 h-4 text-amber-300" />
               <span>100% Fresh Daily</span>
@@ -134,7 +134,7 @@ export default function Hero() {
       </div>
 
       {/* Gentle Scroll Prompt */}
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center text-[#FBF8F3]/60 text-xs">
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center text-[#FAFAF9]/60 text-xs">
         <span className="tracking-widest uppercase text-[10px] mb-1">Scroll down</span>
         <div className="w-5 h-8 rounded-full border border-white/30 flex items-start justify-center p-1">
           <div className="w-1.5 h-2 bg-amber-300 rounded-full animate-bounce mt-1" />

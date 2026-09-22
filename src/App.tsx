@@ -16,7 +16,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FBF8F3] text-[#2C221E] selection:bg-[#D2691E]/20 selection:text-[#2C221E] flex flex-col font-sans">
+    <div className="min-h-screen bg-[#FAFAF9] text-[#292524] selection:bg-[#C2410C]/20 selection:text-[#292524] flex flex-col font-sans">
       {/* Sticky Glassmorphic Navbar */}
       <Navbar />
 
@@ -50,7 +50,7 @@ export default function App() {
           onClick={scrollToTop}
           id="scroll-to-top-btn"
           aria-label="Scroll to top"
-          className="p-2.5 rounded-full bg-[#F4F1EB] text-[#2C221E] shadow-md border border-[#E8E2D7] hover:bg-white hover:text-[#D2691E] transition-all"
+          className="p-2.5 rounded-full bg-[#F5F5F4] text-[#292524] shadow-md border border-[#E7E5E4] hover:bg-white hover:text-[#C2410C] transition-all"
         >
           <ArrowUp className="w-4 h-4" />
         </button>
@@ -59,7 +59,7 @@ export default function App() {
           href={`tel:${RESTAURANT_INFO.phoneRaw}`}
           id="floating-call-btn"
           aria-label="Call Taste of Sonada"
-          className="slow-pop flex items-center gap-2 px-4 py-3 rounded-full bg-[#D2691E] text-white font-semibold shadow-xl hover:bg-[#BD5813] border border-amber-400/30"
+          className="slow-pop flex items-center gap-2 px-4 py-3 rounded-full bg-[#C2410C] text-white font-semibold shadow-xl hover:bg-[#9A3412] border border-amber-400/30"
         >
           <Phone className="w-4 h-4 animate-bounce" />
           <span className="text-xs sm:text-sm">Call 070016 74927</span>

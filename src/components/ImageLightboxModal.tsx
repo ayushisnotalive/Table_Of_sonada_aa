@@ -47,7 +47,7 @@ export default function ImageLightboxModal({
     <AnimatePresence>
       <div
         id="lightbox-backdrop"
-        className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-[#2C221E]/80 backdrop-blur-md"
+        className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 bg-[#292524]/80 backdrop-blur-md"
         onClick={onClose}
       >
         <motion.div
@@ -56,23 +56,23 @@ export default function ImageLightboxModal({
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.94 }}
           transition={{ duration: 0.25, ease: 'easeOut' }}
-          className="relative max-w-4xl w-full max-h-[92vh] flex flex-col bg-[#FBF8F3] rounded-2xl overflow-hidden shadow-2xl border border-[#E8E2D7]"
+          className="relative max-w-4xl w-full max-h-[92vh] flex flex-col bg-[#FAFAF9] rounded-2xl overflow-hidden shadow-2xl border border-[#E7E5E4]"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Header Bar */}
-          <div className="flex items-center justify-between px-5 py-3.5 border-b border-[#E8E2D7] bg-[#F4F1EB]">
+          <div className="flex items-center justify-between px-5 py-3.5 border-b border-[#E7E5E4] bg-[#F5F5F4]">
             <div>
-              <h4 className="font-serif-title text-base sm:text-lg font-semibold text-[#2C221E] leading-snug">
+              <h4 className="font-serif-title text-base sm:text-lg font-semibold text-[#292524] leading-snug">
                 {title}
               </h4>
               {subtitle && (
-                <p className="text-xs sm:text-sm text-[#6E615A]">{subtitle}</p>
+                <p className="text-xs sm:text-sm text-[#57534E]">{subtitle}</p>
               )}
             </div>
             <button
               id="lightbox-close-button"
               onClick={onClose}
-              className="p-2 rounded-full text-[#6E615A] hover:text-[#2C221E] hover:bg-[#E8E2D7] transition-colors focus:outline-none"
+              className="p-2 rounded-full text-[#57534E] hover:text-[#292524] hover:bg-[#E7E5E4] transition-colors focus:outline-none"
               aria-label="Close modal"
             >
               <X className="w-5 h-5" />
@@ -80,7 +80,7 @@ export default function ImageLightboxModal({
           </div>
 
           {/* Image Canvas with Controls */}
-          <div className="relative flex-1 flex items-center justify-center overflow-auto bg-[#F4F1EB]/50 p-2 sm:p-4 min-h-[300px]">
+          <div className="relative flex-1 flex items-center justify-center overflow-auto bg-[#F5F5F4]/50 p-2 sm:p-4 min-h-[300px]">
             <img
               src={imageUrl}
               alt={title}
@@ -93,7 +93,7 @@ export default function ImageLightboxModal({
               <button
                 id="lightbox-prev-btn"
                 onClick={onPrev}
-                className="absolute left-4 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-[#FBF8F3]/90 text-[#2C221E] shadow-md hover:bg-white hover:scale-105 transition-all border border-[#E8E2D7]"
+                className="absolute left-4 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-[#FAFAF9]/90 text-[#292524] shadow-md hover:bg-white hover:scale-105 transition-all border border-[#E7E5E4]"
                 aria-label="Previous image"
               >
                 <ChevronLeft className="w-5 h-5" />
@@ -105,7 +105,7 @@ export default function ImageLightboxModal({
               <button
                 id="lightbox-next-btn"
                 onClick={onNext}
-                className="absolute right-4 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-[#FBF8F3]/90 text-[#2C221E] shadow-md hover:bg-white hover:scale-105 transition-all border border-[#E8E2D7]"
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-2.5 rounded-full bg-[#FAFAF9]/90 text-[#292524] shadow-md hover:bg-white hover:scale-105 transition-all border border-[#E7E5E4]"
                 aria-label="Next image"
               >
                 <ChevronRight className="w-5 h-5" />
@@ -114,7 +114,7 @@ export default function ImageLightboxModal({
           </div>
 
           {/* Bottom Bar Info */}
-          <div className="px-5 py-2.5 bg-[#FBF8F3] border-t border-[#E8E2D7] flex items-center justify-between text-xs text-[#6E615A]">
+          <div className="px-5 py-2.5 bg-[#FAFAF9] border-t border-[#E7E5E4] flex items-center justify-between text-xs text-[#57534E]">
             <span>Taste of Sonada • Chaikhola, Darjeeling</span>
             <span>Use arrow keys to navigate or ESC to close</span>
           </div>
